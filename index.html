@@ -48,6 +48,15 @@
     background: var(--gold);
     margin: 22px auto 22px;
   }
+  header .headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  }
   nav {
     display: flex;
     justify-content: center;
@@ -131,8 +140,15 @@
   }
   .project .link-note {
     font-size: 0.9rem;
+  }
+  .project .link-note a {
     color: var(--gold);
-    font-weight: 600;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .project .link-note a:hover {
+    border-bottom: 1px solid var(--gold);
   }
 
   footer {
@@ -157,9 +173,10 @@
 <body>
 
 <header>
+  <img src="headshot.jpg" alt="Tanish Raha" class="headshot">
   <h1>Tanish Raha</h1>
   <div class="gold-line"></div>
-  <p class="statement">Finance student specializing in wealth and portfolio management, with skills in financial modeling and investment analysis.</p>
+  <p class="statement">Junior at Rutgers Business School majoring in Finance, working to break into wealth and portfolio management.</p>
 </header>
 
 <nav>
@@ -190,27 +207,9 @@
     <span class="tag">Equity Research</span>
     <h3>Walmart Equity Research Report (NYSE: WMT)</h3>
     <p>Independent equity research report initiating a BUY rating on Walmart, built from a full DCF and EV/EBITDA comparable companies valuation. Analyzed Walmart's competitive positioning using Porter's Five Forces, financial statement trends across revenue, margins, and cash flow, and macroeconomic drivers in the retail industry to support a $134 price target.</p>
-    <p class="link-note">Code / full report available on request</p>
+    <p class="link-note"><a href="Walmart_Stock_Report.docx" target="_blank">View Full Report &rarr;</a></p>
   </div>
 
   <div class="project">
     <span class="tag">Client Pitch &middot; Team Project</span>
-    <h3>BNY Asset Servicing Client Pitch</h3>
-    <p>Developed a client-facing pitch proposing BNY's asset servicing platform to support a client's expansion into Asian markets and growth in ETFs and digital assets. Designed a four-part service solution (Manage, Access, Execute, Analyze) and built the competitive positioning and value proposition as part of a five-person team.</p>
-    <p class="link-note">Deck available on request</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p class="subtitle">Interested in connecting? Reach out below.</p>
-  <p>Email: <a href="mailto:Tanish.raha21@gmail.com">youremail@example.com</a> &nbsp;|&nbsp;
-     LinkedIn: <a href="https://www.linkedin.com/in/tanish-raha/" target="_blank">linkedin.com/in/yourprofile</a></p>
-</section>
-
-<footer>
-  &copy; 2026 Tanish Raha &middot; Built with GitHub Pages
-</footer>
-
-</body>
-</html>
+    <h3>BNY Asset Servicing Client
