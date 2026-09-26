@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanish Raha | Portfolio</title>
+<style>
+  :root {
+    --navy: #0f2540;
+    --navy-light: #1c3a5e;
+    --gold: #c8a24a;
+    --bg: #f7f8fa;
+    --text: #22303f;
+    --muted: #5b6b7c;
+    --card: #ffffff;
+    --border: #e2e6ea;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 90px 24px 70px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+  }
+  header .statement {
+    font-size: 1.25rem;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #dce5ee;
+    font-weight: 300;
+  }
+  header .gold-line {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 22px auto 22px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--navy);
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--gold); }
+
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 24px;
+  }
+  section h2 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  section .subtitle {
+    color: var(--muted);
+    margin-bottom: 36px;
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .skill-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    padding: 18px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 1rem;
+  }
+
+  .project {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(15, 37, 64, 0.04);
+  }
+  .project h3 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+  .project .tag {
+    display: inline-block;
+    background: #eef2f6;
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .project p {
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .project .link-note {
+    font-size: 0.9rem;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    background: var(--navy);
+    color: #9fb2c5;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #dce5ee;
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    header .statement { font-size: 1.05rem; }
+    nav { gap: 18px; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tanish Raha</h1>
+  <div class="gold-line"></div>
+  <p class="statement">Finance student specializing in wealth and portfolio management, with skills in financial modeling and investment analysis.</p>
+</header>
+
+<nav>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="subtitle">Technical and professional skills relevant to finance, valuation, and portfolio management.</p>
+  <div class="skills-grid">
+    <div class="skill-card">Financial Modeling</div>
+    <div class="skill-card">DCF & Valuation</div>
+    <div class="skill-card">Bloomberg Terminal</div>
+    <div class="skill-card">Financial Accounting</div>
+    <div class="skill-card">SQL</div>
+    <div class="skill-card">Microsoft Office</div>
+    <div class="skill-card">AI Prompting</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="subtitle">A selection of equity research and client-facing finance work.</p>
+
+  <div class="project">
+    <span class="tag">Equity Research</span>
+    <h3>Walmart Equity Research Report (NYSE: WMT)</h3>
+    <p>Independent equity research report initiating a BUY rating on Walmart, built from a full DCF and EV/EBITDA comparable companies valuation. Analyzed Walmart's competitive positioning using Porter's Five Forces, financial statement trends across revenue, margins, and cash flow, and macroeconomic drivers in the retail industry to support a $134 price target.</p>
+    <p class="link-note">Code / full report available on request</p>
+  </div>
+
+  <div class="project">
+    <span class="tag">Client Pitch &middot; Team Project</span>
+    <h3>BNY Asset Servicing Client Pitch</h3>
+    <p>Developed a client-facing pitch proposing BNY's asset servicing platform to support a client's expansion into Asian markets and growth in ETFs and digital assets. Designed a four-part service solution (Manage, Access, Execute, Analyze) and built the competitive positioning and value proposition as part of a five-person team.</p>
+    <p class="link-note">Deck available on request</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="subtitle">Interested in connecting? Reach out below.</p>
+  <p>Email: <a href="mailto:Tanish.raha21@gmail.com">youremail@example.com</a> &nbsp;|&nbsp;
+     LinkedIn: <a href="https://www.linkedin.com/in/tanish-raha/" target="_blank">linkedin.com/in/yourprofile</a></p>
+</section>
+
+<footer>
+  &copy; 2026 Tanish Raha &middot; Built with GitHub Pages
+</footer>
+
+</body>
+</html>
